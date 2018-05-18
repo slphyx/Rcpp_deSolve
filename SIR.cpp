@@ -1,4 +1,4 @@
-//sompob@tropmedres.ac
+//saralamba@gmail.com
 //This is an example of using Rcpp with deSolve.
 // After you compile this file with the command Rcpp::sourceCpp, 
 // the function SIRmodel will be available in the Global environment.
@@ -37,8 +37,8 @@ List SIRmodel(double t, NumericVector state, NumericVector parameters) {
   compartments["dR"] = dR;
   
   List outputlist(2);
-  outputlist[0] = compartments;
-  outputlist["extraParm"] = extraParm;
+  outputlist[0] = compartments; //this variable will be passed into the ODE solver.
+  outputlist["extraParm"] = extraParm;   //this variable will NOT be passed into the ODE solver.
   
   return outputlist;
 }

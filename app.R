@@ -1,10 +1,14 @@
 #
-# sompob@tropmedres.ac
+# saralaba@gmail.com
 #
 
 library(shiny)
-library.dynam.unload("deSolve", libpath=paste(.libPaths()[1], "//deSolve", sep="")) 
-library.dynam("deSolve", package="deSolve", lib.loc=.libPaths()[1]) 
+library(deSolve)
+#if you got this error message '"unlock_solver" not resolved from current namespace (deSolve)'
+#use these two lines instead of 'library(deSolve)'
+
+#library.dynam.unload("deSolve", libpath=paste(.libPaths()[1], "//deSolve", sep="")) 
+#library.dynam("deSolve", package="deSolve", lib.loc=.libPaths()[1]) 
 
 library(Rcpp)
 
