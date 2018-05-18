@@ -1,5 +1,5 @@
 #
-# saralaba@gmail.com
+# saralamba@gmail.com
 #
 
 library(shiny)
