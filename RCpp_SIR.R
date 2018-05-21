@@ -1,4 +1,4 @@
-#saralamba@mail.com
+#saralamba@gmail.com
 #
 #set working directory
 setwd("D:/Data-Work/MAEMOD/RcppSIR")
@@ -106,6 +106,3 @@ for(i in 1:100){
 end.time <- Sys.time()
 time.taken <- end.time - start.time
 time.taken
-
-
-
